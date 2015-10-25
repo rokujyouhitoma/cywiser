@@ -1,0 +1,10 @@
+# for cywiser
+cywiser.c
+cywiser.so
+
+# 3rd party library
+wiser-20140928.tar.gz
+wiser/
+
+# cython
+build/
