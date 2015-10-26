@@ -23,10 +23,10 @@ libraries = [
     "m",
 ]
 
-ext = Extension("cywiser",
-                sources=["cywiser.pyx"] + sources,
+ext = Extension("wiser",
+                sources=["wiser.pyx"] + sources,
                 include_dirs=include_dirs,
                 libraries=libraries)
 
-setup(name="python wiser wrapper by used of cython",
+setup(name="Python wrapper for wiser by used of Cython",
       ext_modules=cythonize([ext]))

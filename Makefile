@@ -6,7 +6,7 @@ cywiser:
 
 .PHONY: clean
 clean:
-	rm -rf cywiser.c cywiser.so build
+	rm -rf wiser.c wiser.so build
 
 setup:
 	curl -O http://image.gihyo.co.jp/assets/files/book/2014/978-4-7741-6753-4/download/wiser-20140928.tar.gz
@@ -14,4 +14,4 @@ setup:
 	mv wiser-20140928 wiser
 
 test:
-	python -c "import cywiser; print(dir(cywiser)); cywiser.main()"
+	python -c "import wiser; print(dir(wiser)); wiser.main()"
