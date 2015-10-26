@@ -5,6 +5,7 @@ cywiser:
 	python setup.py build_ext -if
 
 .PHONY: clean
+clean:
 	rm -rf cywiser.c cywiser.so build
 
 setup:
