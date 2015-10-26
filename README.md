@@ -1,14 +1,16 @@
 # cywiser
 
+![kiki-san](https://nyanpuzzle.sp.mbga.jp/nyanko/static/app/img/kiki-san.jpg)
+
 Python wrapper for wiser by used of Cython.
 
-# Requirements
+## Requirements
 
 1. wiser
 2. cython
 3. python
 
-# Setup environment
+## Setup environment
 
 ```bash
 pip install -r requirements.txt
@@ -20,7 +22,7 @@ tar zxf wiser-20140928.tar.gz
 mv wiser-20140928 wiser
 ```
 
-# Build
+## Build
 
 ```bash
 make && make test
@@ -39,3 +41,8 @@ make && make test
 1. sqlite3
 2. expat
 3. m
+
+# Special Thanks
+
+1. @gunyarakun
+2. kiki-san
