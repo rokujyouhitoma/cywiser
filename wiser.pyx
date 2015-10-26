@@ -1,6 +1,6 @@
 from libc.stdlib cimport malloc, free
 
-from wiser cimport main as _main
+from wiser cimport main as c_main
 
 
 def main(py_args=[]):
@@ -10,6 +10,6 @@ def main(py_args=[]):
     for i, s in enumerate(py_args):
         c_argv[i] = s
     try:
-        _main(len(py_args), c_argv)
+        c_main(len(py_args), c_argv)
     finally:
         free(c_argv)
