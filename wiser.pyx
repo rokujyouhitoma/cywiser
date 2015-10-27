@@ -1,7 +1,6 @@
-from libc.stdlib cimport malloc, free
+from libc.stdlib cimport free, malloc
 
 from wiser cimport main as c_main
-
 
 def main(py_args=[]):
     cdef char **c_argv
