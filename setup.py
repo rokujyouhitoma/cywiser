@@ -23,12 +23,14 @@ libraries = [
     "m",
 ]
 
+CFLAGS="-Wall -std=c99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -g"
+
 ext = Extension("wiser",
                 sources=["wiser.pyx"] + sources,
                 include_dirs=include_dirs,
                 libraries=libraries,
                 language="c",
-                extra_compile_args=["-Wall -std=c99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -g"])
+                extra_compile_args=[CFLAGS])
 
 setup(name="Python wrapper for wiser by used of Cython",
       ext_modules=cythonize([ext]))
