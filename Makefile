@@ -1,5 +1,4 @@
 CC = gcc
-CFLAGS = -Wall -std=c99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -O3 -g -I ./include
 
 cywiser:
 	python setup.py build_ext -if
